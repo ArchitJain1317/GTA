@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title> GTA </title>
+    </head>
+    <body>
+        <div class="show">
+            <input type="checkbox" id="banner" class="banner" name="banner" > 
+            <label for="banner" onclick="scrol()">
+                <div class="watch"></div>
+                <p class="close">+</p>
+            </label> 
+            <div class="hidden">
+                <img src="images/play.png">
+            </div>
+        </div>
+        <nav>
+            <img src="images/rockstar.png" class="rockstar">
+            <ul>
+                <li> <a href=""> Overview </a></li>
+                <li> <a href=""> GTA Online </a></li>
+                <li> <a href=""> Story </a></li>
+                <li> <a href=""> GTA+ </a></li>
+                <li> <a href=""> Community </a></li>
+                <li> <a href=""> Support </a></li>
+            </ul>
+            <a href="" class="buy-now"> BUY NOW</a>
+        </nav>
+        <br>
+        <div class="main">
+            <img src="images/bg.jpg" class="back">
+            <p class="now">Now available for PS5 and <span>Xbox Series X|S</span></p>
+            <p class="Exp">Experience entertainment blockbusters, Grand Theft <span>Auto V and GTA Online.</span></p>
+            <a href="" class="watch"> WATCH THE TRAILER</a>
+            <a href="" class="buy"> BUY NOW</a>
+        </div>
+        <br><br>
+        <br><br>
+        <footer>
+            <ul>
+                <li> <a href=""> Contact </a> </li>
+                <li> <a href=""> Career</a></li>
+                <li> <a href=""> Subscribe </a></li>
+            </ul>
+        </footer>
+        <script>
+            function scrol(){
+                if (document.querySelector("input.banner").checked == true ){
+                    document.body.style.overflow="visible";
+                }
+                else{
+                    document.body.style.overflow="hidden";
+                }
+            }
+        </script>
+    </body>
+</html>
